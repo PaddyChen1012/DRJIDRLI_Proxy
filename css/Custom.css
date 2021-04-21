@@ -1,5 +1,6 @@
 .bg-img {padding-bottom: 56.25%;}
 .bg-black {background-color: #000;}
+.bg-red {background: linear-gradient(180deg, #85040400 0%, #850404 20%, #850404 80%, #85040400 100%);}
 .word-box {
     top: 0;
     bottom: 0;
