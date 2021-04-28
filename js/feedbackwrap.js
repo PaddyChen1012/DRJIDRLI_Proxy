@@ -53,37 +53,37 @@ function animate(ele,cssObj,fn){
 // 1.给每个图片设置相应的位置，透明度，层级
 var spinArr = [
     {  
-       width:16,
+       width:32,
        top:30,
-       left:12,
+       left:4,
        opacity:100,
        zIndex:2
     },
     {  
-        width:18,
+        width:36,
         top:15,
-        left:26,
+        left:17,
         opacity:100,
         zIndex:3
     },
     {   
-        width:20,
+        width:40,
         top:0,
-        left:40,
+        left:30,
         opacity:100,
         zIndex:4
     },
     {  
-        width:18,
+        width:36,
         top:15,
-        left:56,
+        left:47,
         opacity:100,
         zIndex:3
     },
     {   
-        width:16,
+        width:32,
         top:30,
-        left:72,
+        left:64,
         opacity:100,
         zIndex:2
     }
