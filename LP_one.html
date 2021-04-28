@@ -8,7 +8,14 @@
     <title>Document</title>
     <style>
         body{background:url(images/bg-wrap.png);}
-        .border-yellow{border:1px solid rgb(255, 208, 0);}
+        .border-yellow{border:2px solid rgb(255, 208, 0);}
+        .border-top-gold{
+            border-top: 2px solid transparent;
+            -moz-border-image: -moz-linear-gradient(90deg, #B67C2400 0%, #F4D97A 20%, #F4D97A 80%, #B67C2400 100%);
+            -webkit-border-image: -webkit-linear-gradient(90deg, #B67C2400 0%, #F4D97A 20%, #F4D97A 80%, #B67C2400 100%);
+            border-image: linear-gradient(90deg, #B67C2400 0%, #F4D97A 20%, #F4D97A 80%, #B67C2400 100%);
+            border-image-slice: 1;
+        }
         .text-glod {background: linear-gradient(175deg,#B67C24 20%,#F4D97A 40%,#F4D97A 60%,#B67C24 80%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
         .text-shadow-yellow{text-shadow:2px 2px 0px #B67C24,2px 0px 0px #B67C24,2px -2px 0px #B67C24,0px -2px 0px #B67C24,-2px -2px 0px #B67C24,-2px 0px 0px #B67C24,-2px 2px 0px #B67C24,0px 2px 0px #B67C24;}
         .bg-black-50{background:rgba(0,0,0,.5);}
@@ -86,21 +93,21 @@
             <div class="col-12 activity-img d-flex justify-content-around flex-ph-column">
                 <div class="card position-relative border-yellow rounded mx-auto mb-5">
                     <img src="images/LP(廣招代理)_195x310.jpg" class="img-fluid" alt="廣告代理">
-                    <div class="position-absolute msg-box text-center w-100 py-2 bg-black-50">
+                    <div class="position-absolute msg-box text-center w-100 py-2 bg-black-50 border-top-gold">
                         <div class="h4 text-glod font-weight-bolder">无极限推广模式</div>
                         <div class="h5 text-light font-weight-bolder">广招代理</div>
                     </div>
                 </div>
                 <div class="card position-relative border-yellow rounded mx-auto mb-5">
                     <img src="images/LP(龍虎彩金)_195x310.jpg" class="img-fluid" alt="龍虎彩金">
-                    <div class="position-absolute msg-box text-center w-100 py-2 bg-black-50">
+                    <div class="position-absolute msg-box text-center w-100 py-2 bg-black-50 border-top-gold">
                         <div class="h4 text-glod font-weight-bolder">獎金天天領</div>
                         <div class="h5 text-light font-weight-bolder">龍虎彩金</div>
                     </div>
                 </div>
                 <div class="card position-relative border-yellow rounded mx-auto mb-5">
                     <img src="images/LP(返水8888)_195x310.jpg" class="img-fluid" alt="返水 8888">
-                    <div class="position-absolute msg-box text-center w-100 py-2 bg-black-50">
+                    <div class="position-absolute msg-box text-center w-100 py-2 bg-black-50 border-top-gold">
                         <div class="h4 text-glod font-weight-bolder">超高返水上限</div>
                         <div class="h5 text-light font-weight-bolder">全站 0.8%</div>
                     </div>
