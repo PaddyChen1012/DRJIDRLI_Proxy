@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <title>Document</title>
+    <title>大吉大利 GPK最新平台</title>
     <style>
         body{background:url(images/bg-wrap.png);}
-        .border-yellow{border:2px solid rgb(255, 208, 0);}
-        .border-top-gold{border-top: 2px solid transparent;-moz-border-image: -moz-linear-gradient(90deg, #B67C2400 0%, #F4D97A 20%, #F4D97A 80%, #B67C2400 100%);-webkit-border-image: -webkit-linear-gradient(90deg, #B67C2400 0%, #F4D97A 20%, #F4D97A 80%, #B67C2400 100%);border-image: linear-gradient(90deg, #B67C2400 0%, #F4D97A 20%, #F4D97A 80%, #B67C2400 100%);border-image-slice: 1;}
+        ol,ul,dl{margin:0;}
+        .border-yellow{border:2px solid rgb(255,208,0);}
+        .border-top-gold{border-top: 2px solid transparent;-moz-border-image: -moz-linear-gradient(90deg, #B67C2400 0%, #F4D97A 20%, #F4D97A 80%, #B67C2400 100%);-webkit-border-image: -webkit-linear-gradient(90deg,#B67C2400 0%,#F4D97A 20%,#F4D97A 80%,#B67C2400 100%);border-image: linear-gradient(90deg,#B67C2400 0%,#F4D97A 20%,#F4D97A 80%,#B67C2400 100%);border-image-slice: 1;}
         .text-glod {background: linear-gradient(175deg,#B67C24 20%,#F4D97A 40%,#F4D97A 60%,#B67C24 80%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
         .text-shadow-yellow{text-shadow:2px 2px 0px #B67C24,2px 0px 0px #B67C24,2px -2px 0px #B67C24,0px -2px 0px #B67C24,-2px -2px 0px #B67C24,-2px 0px 0px #B67C24,-2px 2px 0px #B67C24,0px 2px 0px #B67C24;}
         .bg-black-50{background:rgba(0,0,0,.5);}
-        .bg-gold{background: linear-gradient(145deg, #B67C24 20%, #F4D97A 40%, #F4D97A 60%, #B67C24 80%);}
+        .bg-gold{background: linear-gradient(145deg,#B67C24 20%,#F4D97A 40%,#F4D97A 60%,#B67C24 80%);}
         .w-80px{width:80px;}
         .w-90px{width:90px;}
         .w-120px{width:120px;}
@@ -31,9 +32,23 @@
         .register-btn:hover:before{opacity:.8;}
         .activity-img .card{max-width:195px;}
         .msg-box{bottom:0;}
-        @media screen and (max-width: 500px) {
-            .flex-ph-column{flex-direction:column;}
+        .wrap{
+            width:100%;
         }
+        .slide {
+            padding-bottom: 30%;
+            position: relative;
+        }
+        .slide li{
+            position: absolute;
+            left:200px;
+            top:0;
+            transition: all .8s ease;
+        }
+        .slide li img{
+            width:100%;
+        }
+        @media screen and (max-width: 500px) {.flex-ph-column{flex-direction:column;}}
     </style>
 </head>
 
@@ -108,19 +123,28 @@
                 </div>
             </div>
 
+            <div class="wrap mb-5" id="wrap">
+                <div class="slide" id="slide">
+                    <ul>
+                        <!--五张图片-->
+                        <li><a href="#"><img src="images/大吉大利官網BN2_700x450.gif" alt=""/></a></li>
+                        <li><a href="#"><img src="images/大吉大利官網BN_700x450.gif" alt=""/></a></li>
+                        <li><a href="#"><img src="images/返水_700x450.gif" alt=""/></a></li>
+                        <li><a href="#"><img src="images/龍虎榜_700x450.gif" alt=""/></a></li>
+                        <li><a href="#"><img src="images/二存_700x450.gif" alt=""/></a></li>
+                    </ul>
+                </div>
+             </div>
+
             <div class="h1 w-100 text-center text-light font-weight-bolder mb-3 text-shadow-yellow">活动完不玩</div>
             <div class="h2 space-pre-line text-glod font-weight-bolder mx-auto mb-5">天天返水，全站都有
                 龙虎彩金，天天赠送
             </div>
 
-            <div class="col-12 activity bg-dark mb-5 p-0">
-                <img src="images/返水_1200x474.gif" class="w-100" alt="">
-            </div>
-
             <div class="h1 w-100 text-center text-light text-shadow-yellow mb-3">热门游戏截图</div>
 
             <div class="col-12 game-pic mb-5 d-flex justify-content-center">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div id="carouselExampleSlidesOnly" class="carousel" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="images/ph-img1.png" class="d-block img-fluid rounded">
@@ -141,6 +165,7 @@
     </div>
 
     <script src="js/jquery-3.5.1.slim.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js" async></script>
+    <script src="js/feedbackwrap.js" async></script>
 </body>
 </html>
