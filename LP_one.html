@@ -24,9 +24,11 @@
         .h-210px{height:210px;}
         .z-1{z-index:1;}
         .space-pre-line{white-space:pre-line;}
-        .left-btn{bottom:100px;left:0;}
-        .right_btn{bottom:100px;right:0;}
-        .logo{max-width:600px;}
+        .left-0{left:0;}
+        .right-0{right:0;}
+        .top-0{top:0;}
+        .bottom-0{bottom:0;}
+        .logo-img{width:50%;min-width:210px;}
         .register-btn{border-radius:50px;}
         .register-btn:before{content:'立即註册';position:absolute;top:4px;bottom:4px;left:4px;right:4px;display:flex;align-items:center;justify-content:center;background:#f3b14f;border-radius:50px;box-shadow:0 0 15px #000 inset;}
         .register-btn:hover:before{opacity:.8;}
@@ -54,19 +56,21 @@
 
 <body>
 
-    <!-- <a href="" class="left-btn position-fixed d-block w-80px h-90px bg-secondary z-1"></a>
-    <a href="" class="right_btn position-fixed d-block w-80px h-90px bg-secondary z-1"></a> -->
+    <img src="images/LT.png" class="position-fixed img-fluid top-0 left-0 z-1" alt="">
+    <!-- <img src="images/RT.png" class="position-fixed img-fluid top-0 right-0 z-1" alt=""> -->
+    <!-- <img src="images/LB.png" class="position-fixed img-fluid bottom-0 left-0 z-1" alt=""> -->
+    <img src="images/RB.png" class="position-fixed img-fluid bottom-0 right-0 z-1" alt="">
     
     <div class="container p-0">
         <div class="row mx-auto w-100">
             <div class="col-12 logo mt-5 d-flex justify-content-center mx-auto">
-                <img src="images/大吉大利Logo_1000x200.png" class="w-100" alt="">
+                <img src="images/大吉大利Logo_1000x200.png" class="logo-img" alt="">
             </div>
-            <div class="col-12 slogan mb-5">
+            <div class="col-12 slogan mb-3">
                 <img src="images/LP(ribbon)_1200x300.png" class="w-100" alt="">
             </div>
 
-            <div class="col-12 gamekind mb-5 d-flex justify-content-around">
+            <div class="col-12 gamekind mb-3 d-flex justify-content-around">
                 <div class="card text-white bg-transparent border-0">
                     <img src="images/LP(icon1)_180x180.png" class="card-img img-fluid">
                     <div class="card-img-overlay">
@@ -91,11 +95,11 @@
                 <img src="images/龙虎榜_1200x474.gif" class="w-100" alt="">
             </div> -->
 
-            <div class="col-12 download-btn d-flex align-items-center justify-content-center mb-5">
+            <div class="col-12 download-btn d-flex align-items-center justify-content-center mb-3">
                 <a href="" class="h1 position-relative bg-gold text-light py-3 px-5 register-btn font-weight-bolder">立即註册</a>
             </div>
 
-            <div class="col-12 img-group bg-light mb-5 px-0">
+            <div class="col-12 img-group bg-light mb-3 px-0">
                 <img src="images/首存_1200x474.gif" class="w-100" alt="首存獎勵">
             </div>
 
@@ -113,25 +117,25 @@
              </div>
 
             <div class="col-12 activity-img d-flex justify-content-around">
-                <div class="card position-relative rounded mb-5 border-0">
+                <div class="card position-relative rounded mb-3 border-0">
                     <img src="images/LP-廣招代理.svg" class="img-fluid" alt="廣招代理">
                 </div>
-                <div class="card position-relative rounded mb-5 border-0 mx-2">
+                <div class="card position-relative rounded mb-3 border-0 mx-2">
                     <img src="images/LP-龍虎彩金.svg" class="img-fluid" alt="龍虎彩金">
                 </div>
-                <div class="card position-relative rounded mb-5 border-0">
+                <div class="card position-relative rounded mb-3 border-0">
                     <img src="images/LP-返水8888.svg" class="img-fluid" alt="返水 8888">
                 </div>
             </div>
 
             <div class="h1 w-100 text-center text-light font-weight-bolder mb-3 text-shadow-yellow">活动玩不完</div>
-            <div class="h2 space-pre-line text-glod font-weight-bolder mx-auto mb-5">天天返水，全站都有
+            <div class="h2 space-pre-line text-glod font-weight-bolder mx-auto mb-3">天天返水，全站都有
                 龙虎彩金，天天赠送
             </div>
 
             <div class="h1 w-100 text-center text-light text-shadow-yellow mb-3">热门游戏截图</div>
 
-            <div class="col-12 game-pic mb-5 d-flex justify-content-center">
+            <div class="col-12 game-pic mb-3 d-flex justify-content-center">
                 <div id="carouselExampleSlidesOnly" class="carousel" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
