@@ -41,6 +41,9 @@
         .slide {padding-bottom:38.5%;position:relative;}
         .slide li{position: absolute;left:200px;top:0;transition: all .8s ease;}
         .slide li img{width:100%;}
+        .btn{width: 256px;height: 80px;}
+        .btn-1{background:url(images/button1_256x80.png);}
+        .btn-2{background:url(images/button2_256x80.png);}
         @media screen and (max-width: 500px) {.flex-ph-column{flex-direction:column;}.pc-only{display:none;}}
     </style>
 </head>
@@ -49,14 +52,14 @@
    
     <div class="container p-0">
         <div class="row mx-auto w-100">
-            <div class="col-12 logo mt-4 d-flex flex-column align-items-center mx-auto">
+            <div class="col-12 logo mt-4 mb-3 d-flex flex-column align-items-center mx-auto">
                 <img src="images/大吉大利Logo_1000x200.png" class="logo-img" alt="">
             </div>
-            <div class="col-12 slogan mb-3">
+            <div class="col-12 slogan mb-4 p-0">
                 <img src="images/LP(ribbon)_1200x300.png" class="w-100" alt="">
             </div>
 
-            <div class="col-12 gamekind mb-3 d-flex justify-content-around">
+            <div class="col-12 gamekind mb-4 d-flex justify-content-around">
                 <div class="card text-white bg-transparent border-0">
                     <img src="images/LP(icon1)_180x180.png" class="card-img img-fluid">
                     <div class="card-img-overlay"></div>
@@ -71,12 +74,9 @@
                 </div>
             </div>
 
-            <div class="col-12 img-group bg-light mb-3 px-0">
-                <img src="images/首存_1200x474.gif" class="w-100" alt="首存獎勵">
-            </div>
-
-            <div class="col-12 download-btn d-flex align-items-center justify-content-center mb-3">
-                <a href="" class="h1 position-relative bg-gold text-light py-3 px-5 register-btn font-weight-bolder">领取赠金</a>
+            <div class="col-12 download-btn d-flex flex-wrap align-items-center justify-content-center mb-4">
+                <a href="" class="btn btn-1 mb-3"></a>
+                <a href="" class="btn btn-2 mb-3"></a>
             </div>
 
             <div class="wrap mb-5" id="wrap">
