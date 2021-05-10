@@ -18,10 +18,7 @@
         .w-80px{width:80px;}
         .w-90px{width:90px;}
         .w-120px{width:120px;}
-        .h-60px{height:60px;}
-        .h-90px{height:90px;}
-        .h-180px{height:180px;}
-        .h-210px{height:210px;}
+        .w-320px{width:320px;}
         .z-1{z-index:1;}
         .z-5{z-index:5;}
         .space-pre-line{white-space:pre-line;}
@@ -29,6 +26,7 @@
         .right-0{right:0;}
         .top-0{top:0;}
         .bottom-0{bottom:0;}
+        .middle{vertical-align:middle;}
         .logo-img{width:50%;min-width:240px;}
         .border-img{width:100px;}
         .register-btn{border-radius:50px;}
@@ -41,49 +39,50 @@
         .slide {padding-bottom:45%;position:relative;}
         .slide li{position: absolute;left:200px;top:0;transition: all .8s ease;}
         .slide li img{width:100%;}
-        .btn{width: 256px;height: 80px;}
-        .btn-1{background:url(images/button1_256x80.png);}
-        .btn-2{background:url(images/button2_256x80.png);}
+        .btn-1{width: 256px;height: 80px;background:url(images/button1_256x80.png);}
+        .btn-2{width: 256px;height: 80px;background:url(images/button2_256x80.png);}
+        .download-btn {background:linear-gradient(0deg, rgba(255,255,255,.3) 0%, rgba(255,255,255,0) 100%);}
+        .last-pg {background:linear-gradient(180deg, rgba(255,255,255,.3) 0%, rgba(255,255,255,0) 25%);}
         @media screen and (max-width: 500px) {.flex-ph-column{flex-direction:column;}.pc-only{display:none;}}
     </style>
 </head>
 
 <body>
    
-    <div class="container p-0">
+    <div class="container-fluid p-0">
         <div class="row mx-auto w-100">
-            <div class="col-12 logo mt-4 mb-3 d-flex flex-column align-items-center mx-auto">
+            <div class="col-12 logo mt-4 mb-2 d-flex flex-column align-items-center mx-auto">
                 <img src="images/大吉大利Logo_1000x200.png" class="logo-img" alt="">
             </div>
-            <div class="col-12 slogan mb-4 p-0">
+            <div class="col-12 slogan mb-3 p-0">
                 <img src="images/LP(ribbon)_1200x300.png" class="w-100" alt="">
             </div>
 
-            <div class="col-12 gamekind mb-4 d-flex justify-content-around">
-                <div class="card text-white bg-transparent border-0">
+            <div class="col-12 gamekind mb-3 d-flex justify-content-around">
+                <div class="card text-white bg-transparent border-0 w-25">
                     <img src="images/LP(icon1)_180x180.png" class="card-img img-fluid">
-                    <div class="card-img-overlay"></div>
                 </div>
-                <div class="card text-white bg-transparent border-0 mx-2">
+                <div class="card text-white bg-transparent border-0 w-25">
                     <img src="images/LP(icon2)_180x180.png" class="card-img img-fluid">
-                    <div class="card-img-overlay"></div>
                 </div>
-                <div class="card text-white bg-transparent border-0">
+                <div class="card text-white bg-transparent border-0 w-25">
                     <img src="images/LP(icon3)_180x180.png" class="card-img img-fluid">
-                    <div class="card-img-overlay"></div>
                 </div>
             </div>
 
-            <div class="col-12 download-btn d-flex flex-wrap align-items-center justify-content-center mb-4">
-                <a href="https://djdl777.com/" target="_self" class="btn btn-1 mb-3"></a>
-                <a href="https://djdl777.com/" target="_self" class="btn btn-2 mb-3"></a>
+            <div class="h2 w-100 text-center text-light font-weight-bolder mb-3 text-shadow-yellow keep-all"> 百家返水0.8 不限条件随你下
+            </div>
+
+            <div class="col-12 download-btn d-flex flex-wrap align-items-center justify-content-center mb-3 p-0">
+                <a href="https://djdl777.com/" target="_self" class="btn-1 mb-3"></a>
+                <a href="https://djdl777.com/" target="_self" class="btn-2 mb-3"></a>
             </div>
 
             <div class="wrap mb-5" id="wrap">
                 <div class="slide" id="slide">
                     <ul>
-                        <li><a href="#"><img src="images/大吉大利官網BN2.jpg" alt=""/></a></li>
                         <li><a href="#"><img src="images/大吉大利官網BN.jpg" alt=""/></a></li>
+                        <li><a href="#"><img src="images/首存.jpg" alt=""/></a></li>
                         <li><a href="#"><img src="images/返水.jpg" alt="超低倍水"/></a></li>
                         <li><a href="#"><img src="images/龍虎榜.jpg" alt="天天龍虎榜"/></a></li>
                         <li><a href="#"><img src="images/二存.jpg" alt="二存超優惠"/></a></li>
@@ -91,15 +90,24 @@
                 </div>
              </div>
 
-            <div class="h1 w-100 text-center text-light font-weight-bolder mb-3 text-shadow-yellow">活动玩不完</div>
-            <div class="h2 space-pre-line text-glod font-weight-bolder mx-auto mb-5">天天返水，全站都有
-                龙虎彩金，天天赠送
+            <div class="h2 w-100 mx-auto text-center text-light font-weight-bolder mb-3 text-shadow-yellow">搶先優惠</div>
+            <div class="w-320px mx-auto text-center mb-3 px-2">
+                <div class="d-flex justify-content-between align-content-center w-100 mx-auto mb-3">
+                    <div class="d-flex align-items-center h5 text-right text-glod font-weight-bolder m-0">首存彩金，最高出款1600</div><a href="https://djdl777.com/" class="btn btn-danger" target="_self">GO</a>
+                </div>
+                <div class="d-flex justify-content-between align-content-center w-100 mx-auto mb-3">
+                    <div class="d-flex align-items-center h5 text-glod font-weight-bolder m-0">二存優惠，超低倍水</div><a href="https://djdl777.com/" class="btn btn-danger" target="_self">GO</a>
+                </div>
+                <div class="d-flex justify-content-between align-content-center w-100 mx-auto mb-3">
+                    <div class="d-flex align-items-center h5 text-glod font-weight-bolder m-0">龍虎彩金，最高5000</div><a href="https://djdl777.com/" class="btn btn-danger" target="_self">GO</a>
+                </div>
             </div>
 
-            <div class="h1 w-100 text-center text-light font-weight-bolder mb-5 text-shadow-yellow keep-all"> 百家返水0.8 不限条件随你下
+            <div class="d-flex justify-content-center w-100 last-pg">
+                <img src="images/media.png" class="w-75 my-3" alt="">
             </div>
 
-            <div class="h1 w-100 text-center text-light text-shadow-yellow mb-3">热门游戏截图</div>
+            <div class="h2 w-100 text-center text-light text-shadow-yellow mb-3">热门游戏截图</div>
 
             <div class="col-12 game-pic mb-3 d-flex justify-content-center">
                 <div id="carouselExampleSlidesOnly" class="carousel" data-ride="carousel">
