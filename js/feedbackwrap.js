@@ -27,9 +27,9 @@ function animate(ele,cssObj,fn){
             leader = leader + step;
             //3.赋值
             if(k === "opacity"){
-                ele.style[k] = leader/100;
+                ele.style[k] = cssObj[k];
                 //兼容IE678
-                ele.style.filter = "alpha(opacity="+leader+")";
+                ele.style.filter = "alpha(opacity="+cssObj[k]+")";
             }else if(k === "zIndex"){
                 ele.style.zIndex = cssObj[k];
             }else if(k === "top"){
@@ -56,35 +56,35 @@ var spinArr = [
        width:50,
        top:30,
        left:0,
-       opacity:100,
+       opacity:.1,
        zIndex:2
     },
     {  
         width:56,
         top:15,
         left:9,
-        opacity:100,
+        opacity:.2,
         zIndex:3
     },
     {   
         width:60,
         top:0,
         left:20,
-        opacity:100,
+        opacity:1,
         zIndex:4
     },
     {  
         width:56,
         top:15,
         left:35,
-        opacity:100,
+        opacity:.2,
         zIndex:3
     },
     {   
         width:50,
         top:30,
         left:50,
-        opacity:100,
+        opacity:.1,
         zIndex:2
     }
 ]
