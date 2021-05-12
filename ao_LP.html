@@ -8,12 +8,53 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
         .fluid-hight{height:100vh;}
-        .h-60{height:60px;}
+        .pb-100{padding-bottom:100%;}
+        .h-80{height:80px;}
+        .h-main{height:calc(100% - 160px);}
         .z-00{z-index:-1;}
+        .bg-black-20{background-color:rgba(0,0,0,.2);}
+        .bg-pink-40{background-color:rgba(255,89,131,.4);}
+        .border-10{border-radius:10px;}
     </style>
 </head>
 <body>
-    <div class="container-fluid fluid-hight bg-dark position-absolute z-00" style="background: url(images/LP-1_1920x1080.jpg)no-repeat center/cover;"></div>
-    <div class="container-fluid h-60 bg-primary"></div>
+    <div class="container-fluid fluid-hight bg-dark position-absolute z-00" style="background:url(images/LP-1_1920x1080.jpg)no-repeat center/cover;"></div>
+    <div class="container-fluid fluid-hight p-0">
+        <div class="row w-100 mx-auto h-80 bg-pink-40 litle py-2 px-4 justify-content-between">
+            <div class="d-flex align-items-center h-100">
+                <img src="images/大吉大利x-icon.png" class="h-100 mr-3" alt="">
+                <span class="h3 text-light font-weight-bolder mb-0 mr-3">大吉大利</span>
+                <span class="h4 text-light font-weight-bolder mb-0">每日更新火辣视频免费看到爽</span>
+            </div>
+            <div class="py-1">
+                <button type="button" class="btn btn-outline-light font-weight-bolder rounded-pill h-100 px-5 mr-3">安装教学</button>
+                <button type="button" class="btn btn-outline-light font-weight-bolder rounded-pill h-100 px-5">掉签教学</button>
+            </div>
+        </div>
+        <div class="row w-100 mx-auto h-main">
+            <div class="col-12 col-md-8 h-100 d-flex flex-column justify-content-center align-items-center">
+                <div class="d-flex flex-column w-75">
+                    <img src="images/img-logo@2x.png" alt="">
+                    <span class="h5 bg-black-20 py-2 px-3 mx-3 mb-0 border-10 text-light">4/21 商店版更新上架，可以安装商店版罗～</span>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 h-100 p-0">
+                <div class="row w-100 mx-auto h-100">
+                    <div class="col-8 d-flex flex-column justify-content-center align-items-center p-0">
+                        <div class="h5 w-100 py-4 bg-black-20 d-flex flex-column align-items-center text-light border-10 mb-4"><img src="images/download.png" class="mb-2" alt="">扫码下载App</div>
+                        <a href="" class="btn btn-danger w-100 rounded-pill p-3">在線觀看</a>
+                    </div>
+                    <div class="col-4 d-flex flex-column justify-content-end">
+                        <div class="d-flex w-100 mb-4"><a href="" class="w-100 pb-100 bg-dark rounded-circle"></a></div>
+                        <div class="d-flex w-100"><a href="" class="w-100 pb-100 bg-dark rounded-circle"></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row w-100 mx-auto h-80 flex-column align-items-center footer">            
+            <t>客服信箱：palipaliservice@gmail.com</t>
+            <t>Copyright © palipali All Rights Reserved.</t>
+        </div>
+    </div>
 </body>
 </html>
