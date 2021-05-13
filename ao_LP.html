@@ -9,17 +9,71 @@
     <style>
         .fluid-hight{height:100vh;}
         .pb-100{padding-bottom:100%;}
+        .h-60{height:60px;}
         .h-80{height:80px;}
-        .h-main{height:calc(100% - 160px);}
+        .h-main{height:auto;min-height:calc(100% - 140px);}
         .z-00{z-index:-1;}
+        .btn-font{font-size:1.5rem !important;}
         .bg-black-20{background-color:rgba(0,0,0,.2);}
         .bg-pink-40{background-color:rgba(255,89,131,.4);}
+        .bg-bpink-70{background-color:rgba(99,43,50,.7);}
         .border-10{border-radius:10px;}
+        .wrap{position:absolute;top:0;bottom:0;left:0;right:0;}
+        .wrap:before{content:'';position:absolute;top:0;bottom:0;left:0;right:0;background-color:rgba(255,255,255,.2);}
+        .circle-btn{width: 100px;bottom:60px;right:0;}
+        .bg-animation{animation:bg-animation 12s ease normal infinite;}
+        .animation-delay-4{animation-delay:4s;opacity:0;}
+        .animation-delay-8{animation-delay:-4s;opacity:1;}
+        @keyframes bg-animation{
+            0%{
+                background-position:bottom;
+                opacity: 0;
+            }
+            33%{
+                background-position:center;
+                opacity: 1;
+            }
+            66%,100%{
+                background-position:top;
+                opacity: 0;
+            }
+        }
+        @media screen and (max-width: 500px) {
+            .h5{font-size:.9rem;}
+            .fluid-hight{height:;min-height:100vh;}
+            .h-main>div:nth-child(1),
+            .h-main>div:nth-child(2){height:50% !important;}
+            .litle .h3,.litle .h4{display:none;}
+            .btn-font{font-size:1rem !important;padding:0 .8rem !important;}
+            .h-main>div{padding:0;}
+            .main-box{width:100% !important;}
+            .main-box span{width:100%;margin:0 !important;}
+            .circle-btn{width: 80px;}
+            .footer{font-size:.8rem;}
+            @keyframes bg-animation{
+            0%{
+                background-position:right;
+                opacity: 0;
+            }
+            33%{
+                background-position:left;
+                opacity: 1;
+            }
+            66%,100%{
+                background-position:left;
+                opacity: 0;
+            }
+        }
+        }
     </style>
 </head>
 <body>
-    <div class="container-fluid fluid-hight bg-dark position-absolute z-00" style="background:url(images/LP-1_1920x1080.jpg)no-repeat center/cover;"></div>
-    <div class="container-fluid fluid-hight p-0">
+    <div class="position-relative container-fluid fluid-hight p-0">
+
+        <div class="container-fluid h-100 bg-dark position-absolute z-00 bg-animation animation-delay-8 wrap" style="background:url(images/page05-BG.jpg)no-repeat center/cover;"></div>
+        <div class="container-fluid h-100 bg-dark position-absolute z-00 bg-animation animation-delay-4 wrap" style="background:url(images/page02-BG.jpg)no-repeat center/cover;"></div>
+        <div class="container-fluid h-100 bg-dark position-absolute z-00 bg-animation wrap" style="background:url(images/page00-BG.jpg)no-repeat center/cover;"></div>
+
         <div class="row w-100 mx-auto h-80 bg-pink-40 litle py-2 px-4 justify-content-between">
             <div class="d-flex align-items-center h-100">
                 <img src="images/大吉大利x-icon.png" class="h-100 mr-3" alt="">
@@ -27,33 +81,34 @@
                 <span class="h4 text-light font-weight-bolder mb-0">每日更新火辣视频免费看到爽</span>
             </div>
             <div class="py-1">
-                <button type="button" class="btn btn-outline-light font-weight-bolder rounded-pill h-100 px-5 mr-3">安装教学</button>
-                <button type="button" class="btn btn-outline-light font-weight-bolder rounded-pill h-100 px-5">掉签教学</button>
+                <button type="button" class="btn btn-font btn-outline-light font-weight-bolder rounded-pill h-100 px-5 mr-1">安装教学</button>
+                <button type="button" class="btn btn-font btn-outline-light font-weight-bolder rounded-pill h-100 px-5">掉签教学</button>
             </div>
         </div>
-        <div class="row w-100 mx-auto h-main">
+        <div class="row w-100 mx-auto h-main align-items-center">
             <div class="col-12 col-md-8 h-100 d-flex flex-column justify-content-center align-items-center">
-                <div class="d-flex flex-column w-75">
+                <div class="d-flex flex-column main-box w-75">
                     <img src="images/img-logo@2x.png" alt="">
                     <span class="h5 bg-black-20 py-2 px-3 mx-3 mb-0 border-10 text-light">4/21 商店版更新上架，可以安装商店版罗～</span>
                 </div>
             </div>
-            <div class="col-12 col-md-4 h-100 p-0">
+            <div class="col-12 col-md-4 h-100">
                 <div class="row w-100 mx-auto h-100">
-                    <div class="col-8 d-flex flex-column justify-content-center align-items-center p-0">
+                    <div class="col-12 col-md-8 d-flex flex-column justify-content-center align-items-center">
                         <div class="h5 w-100 py-4 bg-black-20 d-flex flex-column align-items-center text-light border-10 mb-4"><img src="images/download.png" class="mb-2" alt="">扫码下载App</div>
                         <a href="" class="btn btn-danger w-100 rounded-pill p-3">在線觀看</a>
                     </div>
-                    <div class="col-4 d-flex flex-column justify-content-end">
-                        <div class="d-flex w-100 mb-4"><a href="" class="w-100 pb-100 bg-dark rounded-circle"></a></div>
-                        <div class="d-flex w-100"><a href="" class="w-100 pb-100 bg-dark rounded-circle"></a></div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
-        <div class="row w-100 mx-auto h-80 flex-column align-items-center footer">            
-            <t>客服信箱：palipaliservice@gmail.com</t>
-            <t>Copyright © palipali All Rights Reserved.</t>
+        <div class="position-fixed d-flex flex-column justify-content-end circle-btn">
+            <div class="d-flex w-100 mb-4"><a href="" class="w-100 pb-100 bg-bpink-70 rounded-circle"></a></div>
+            <div class="d-flex w-100"><a href="" class="w-100 pb-100 bg-bpink-70 rounded-circle"></a></div>
+        </div>
+        <div class="row w-100 mx-auto h-60 flex-column align-items-center justify-content-center text-light footer">            
+            <t>客服信箱：xxxxxxxxxxxxxxxxx@gmail.com</t>
+            <t>Copyright © drjidrli All Rights Reserved.</t>
         </div>
     </div>
 </body>
