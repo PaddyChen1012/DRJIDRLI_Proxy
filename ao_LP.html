@@ -21,9 +21,9 @@
         .wrap{position:absolute;top:0;bottom:0;left:0;right:0;}
         .wrap:before{content:'';position:absolute;top:0;bottom:0;left:0;right:0;background-color:rgba(255,255,255,.2);}
         .circle-btn{width: 100px;bottom:60px;right:0;}
-        .bg-animation{animation:bg-animation 12s ease normal infinite;}
-        .animation-delay-4{animation-delay:4s;opacity:0;}
-        .animation-delay-8{animation-delay:-4s;opacity:1;}
+        .bg-animation{animation:bg-animation 18s ease normal infinite;}
+        .animation-delay-4{animation-delay:6s;opacity:0;}
+        .animation-delay-8{animation-delay:-6s;opacity:1;}
         @keyframes bg-animation{
             0%{
                 background-position:bottom;
@@ -49,6 +49,7 @@
             .main-box{width:100% !important;}
             .main-box span{width:100%;margin:0 !important;}
             .circle-btn{width: 80px;}
+            .qr-box{padding:0 4rem;}
             .footer{font-size:.8rem;}
             @keyframes bg-animation{
             0%{
@@ -70,8 +71,8 @@
 <body>
     <div class="position-relative container-fluid fluid-hight p-0">
 
-        <div class="container-fluid h-100 bg-dark position-absolute z-00 bg-animation animation-delay-8 wrap" style="background:url(images/page05-BG.jpg)no-repeat center/cover;"></div>
-        <div class="container-fluid h-100 bg-dark position-absolute z-00 bg-animation animation-delay-4 wrap" style="background:url(images/page02-BG.jpg)no-repeat center/cover;"></div>
+        <div class="container-fluid h-100 bg-dark position-absolute z-00 bg-animation animation-delay-8 wrap" style="background:url(images/page03-BG.jpg)no-repeat center/cover;"></div>
+        <div class="container-fluid h-100 bg-dark position-absolute z-00 bg-animation animation-delay-4 wrap" style="background:url(images/page01-BG.jpg)no-repeat center/cover;"></div>
         <div class="container-fluid h-100 bg-dark position-absolute z-00 bg-animation wrap" style="background:url(images/page00-BG.jpg)no-repeat center/cover;"></div>
 
         <div class="row w-100 mx-auto h-80 bg-pink-40 litle py-2 px-4 justify-content-between">
@@ -94,7 +95,7 @@
             </div>
             <div class="col-12 col-md-4 h-100">
                 <div class="row w-100 mx-auto h-100">
-                    <div class="col-12 col-md-8 d-flex flex-column justify-content-center align-items-center">
+                    <div class="col-12 col-md-8 d-flex flex-column justify-content-center align-items-center qr-box">
                         <div class="h5 w-100 py-4 bg-black-20 d-flex flex-column align-items-center text-light border-10 mb-4"><img src="images/download.png" class="mb-2" alt="">扫码下载App</div>
                         <a href="" class="btn btn-danger w-100 rounded-pill p-3">在線觀看</a>
                     </div>
