@@ -39,6 +39,7 @@
             }
         }
         @media screen and (max-width: 500px) {
+            .border-10{border-radius:0px;}
             .h5{font-size:.9rem;}
             .fluid-hight{height:auto;min-height:100vh;}
             .h-main>div:nth-child(1),
@@ -49,7 +50,7 @@
             .main-box{width:100% !important;}
             .main-box span{width:100%;margin:0 !important;}
             .circle-btn{width: 80px;}
-            .qr-box{padding:0 4rem;}
+            .qr-box{padding:2rem 4rem 0;}
             .footer{font-size:.8rem;}
             @keyframes bg-animation{
             0%{
@@ -89,7 +90,9 @@
         <div class="row w-100 mx-auto h-main align-items-center">
             <div class="col-12 col-md-8 h-100 d-flex flex-column justify-content-center align-items-center">
                 <div class="d-flex flex-column main-box w-75">
-                    <img src="images/img-logo@2x.png" class="w-100" alt="">
+                    <div class="p-4">
+                        <img src="images/img-logo@2x.png" class="w-100" alt="">
+                    </div>
                     <span class="h5 bg-black-20 py-2 px-3 mx-3 mb-0 border-10 text-light">4/21 商店版更新上架，可以安装商店版罗～</span>
                 </div>
             </div>
